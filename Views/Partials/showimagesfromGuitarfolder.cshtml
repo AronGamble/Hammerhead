@@ -2,24 +2,19 @@
 
 @{ var mediaId = 1118; }
 
-@if (mediaId != null)
-{
-
-    var media = Umbraco.Media(mediaId);
+var media = Umbraco.Media(mediaId);
     var selection = media.Children("Image");
 
     if (selection.Any())
     {
-        <ul class="flickr">
-            @foreach (var item in selection)
-            {
-                <li>
-                    <a href="/Guitars"><img src="@item.umbracoFile" alt="@item.Name" /></a>
-                </li>
-            }
-        </ul>
-    }
+       
+<ul class="flickr">
+  @foreach ( var item in selection ) {
 
+    <li>
+      <a href="/Guitars">
+        <img src="@item.umbracoFile" alt="@item.Name" /></a>
+    </li>
+  }
+</ul>
 }
-
-
