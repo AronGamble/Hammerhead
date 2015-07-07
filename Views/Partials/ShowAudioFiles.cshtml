@@ -1,0 +1,57 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+
+@{ var selection = CurrentPage.AudioItems.Where("Visible"); }
+
+@if (selection.Any())
+{
+   
+        foreach (var item in selection)
+        {
+			
+			 				<!-- POST -->
+                        <div class="post">
+                           
+                            <div class="post-meta">
+                                <div class="post-format">
+                                    <a href="#"><i class="fa fa-image"></i></a>
+                                </div>
+                                <div class="post-date">
+                                     @GlobalHelpers.FormattedDate(item.CreateDate.ToString())
+                                </div>
+                                <div class="post-comment">
+                                    <i class="fa fa-comment"></i>
+                                    <a href="#">105</a>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div class="post-author">
+                                    <a href="#">
+                                    <div class="image-thumb">
+                                        <img src="/images/author/50x50.gif" alt="">
+                                    </div>
+                                    <div class="name-author">
+                                        <cite>@item.Summary</cite>
+                                    </div>
+                                    </a>
+                                </div>
+                                <div class="post-title">
+                                    <h2>@item.Name</h2>
+                                </div>
+                                <div class="post-entry">
+									@Html.Raw(item.AudioFile)
+									
+                                    <p>@item.Description</p>
+                                </div>
+                            </div>
+                        </div>
+           <!-- END / POST -->																		                                   
+        }
+    
+}
+
+
+
+
+									
+									

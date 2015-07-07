@@ -1,0 +1,45 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{ var home = CurrentPage.Site(); }
+
+ 
+        <!-- NAVIGATION -->
+        <nav class="pi-navigation" data-menu-responsive="1200">
+            <div class="container">
+                <div class="open-menu">
+                    <span class="item item-1"></span>
+                    <span class="item item-2"></span>
+                    <span class="item item-3"></span>
+                </div>
+                <div class="close-menu"></div>
+                <ul class="navlist">
+					
+				@{ var selection = home.Children.Where("Visible"); }
+
+ 				@foreach (var page in selection)
+            	{
+					if (page.Name != "Search")
+						{
+                <li>
+                    <a href="@page.Url">@page.Name</a>
+                    
+                    
+                </li>
+						}
+            	}
+
+                </ul>
+
+                <div class="search-box">
+                    <span class="icon-search">
+                        <i class="fa fa-search"></i>
+                    </span>
+                    <form action="/search" method="GET">
+                        <input name="keywords" type="search" value="Search and hit enter">
+                    </form>
+                </div>
+                <div class="share-box">
+                    <a href="https://www.youtube.com/channel/UC0j_4pOpTxMr284p5ioNRjw"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+         </nav>
+         <!-- END / NAVIGATION -->

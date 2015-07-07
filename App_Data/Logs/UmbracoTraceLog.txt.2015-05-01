@@ -1,0 +1,60 @@
+﻿2015-05-01 00:51:16,282 [6] INFO  umbraco.BusinessLogic.Log - [Thread 174] Log scrubbed.  Removed all items older than 2015-03-02 00:51:16
+2015-05-01 04:51:16,293 [6] INFO  umbraco.BusinessLogic.Log - [Thread 233] Log scrubbed.  Removed all items older than 2015-03-02 04:51:16
+2015-05-01 08:51:16,289 [6] INFO  umbraco.BusinessLogic.Log - [Thread 285] Log scrubbed.  Removed all items older than 2015-03-02 08:51:16
+2015-05-01 12:33:16,421 [6] INFO  Umbraco.Web.Security.WebSecurity - [Thread 259] User Id: 0 logged in
+2015-05-01 12:33:16,452 [6] INFO  Umbraco.Core.PluginManager - [Thread 275] Starting resolution types of Umbraco.Web.Trees.TreeController
+2015-05-01 12:33:16,452 [6] INFO  Umbraco.Core.PluginManager - [Thread 275] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2015-05-01 12:33:31,990 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 275] Content 'Blog' with Id '1085' has been unpublished.
+2015-05-01 12:33:32,114 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 275] Content 'Tall trees have deep roots' with Id '1086' has been unpublished.
+2015-05-01 12:33:32,161 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 275] Content 'Different Flowers Make a Bouquet' with Id '1087' has been unpublished.
+2015-05-01 12:33:32,208 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 275] Content 'Only the curious have something to find' with Id '1088' has been unpublished.
+2015-05-01 12:41:55,855 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 277] Content 'Gibson Les Paul' with Id '0' has been published.
+2015-05-01 12:45:21,323 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 170] Content 'Gibson Les Paul' with Id '1096' has been published.
+2015-05-01 12:48:56,260 [6] INFO  umbraco.content - [Thread 232] Loading content from database...
+2015-05-01 12:49:46,742 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 295] Content 'Learn' with Id '1074' has been unpublished.
+2015-05-01 12:49:46,820 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 295] Content 'The starter kit' with Id '1075' has been unpublished.
+2015-05-01 12:49:46,867 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 295] Content 'Basics' with Id '1076' has been unpublished.
+2015-05-01 12:49:46,913 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 295] Content 'Masterclasses' with Id '1077' has been unpublished.
+2015-05-01 12:49:54,651 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 160] Content 'Explore' with Id '1078' has been unpublished.
+2015-05-01 12:49:54,713 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 160] Content 'Our Umbraco' with Id '1079' has been unpublished.
+2015-05-01 12:49:54,776 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 160] Content 'Codegarden' with Id '1080' has been unpublished.
+2015-05-01 12:49:54,823 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 160] Content 'Meetup groups' with Id '1081' has been unpublished.
+2015-05-01 12:50:06,242 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 264] Content 'Extend' with Id '1082' has been unpublished.
+2015-05-01 12:50:06,304 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 264] Content 'Umbraco Forms' with Id '1083' has been unpublished.
+2015-05-01 12:50:06,351 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 264] Content 'Package repository' with Id '1084' has been unpublished.
+2015-05-01 12:50:12,841 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 263] Content 'Contact' with Id '1089' has been unpublished.
+2015-05-01 12:50:37,177 [6] INFO  umbraco.content - [Thread 151] Loading content from database...
+2015-05-01 12:50:40,889 [6] INFO  umbraco.content - [Thread 152] Loading content from database...
+2015-05-01 12:50:45,835 [6] INFO  umbraco.content - [Thread 249] Loading content from database...
+2015-05-01 12:51:16,286 [6] INFO  umbraco.BusinessLogic.Log - [Thread 249] Log scrubbed.  Removed all items older than 2015-03-02 12:51:16
+2015-05-01 12:51:38,485 [6] INFO  Umbraco.Core.PluginManager - [Thread 160] Starting resolution types of Umbraco.Web.Trees.TreeController
+2015-05-01 12:51:38,485 [6] INFO  Umbraco.Core.PluginManager - [Thread 160] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2015-05-01 12:53:12,693 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 263] Content 'Audio' with Id '0' has been published.
+2015-05-01 12:53:21,928 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 150] Content 'Video' with Id '0' has been published.
+2015-05-01 13:00:21,054 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 153] Content 'Before I Forget' with Id '0' has been published.
+2015-05-01 13:02:19,100 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 253] Content 'Hell For Leather 1995' with Id '0' has been published.
+2015-05-01 13:03:03,888 [6] ERROR Umbraco.Web.PropertyEditors.RteEmbedController - [Thread 279] Error embedding url https://www.youtube.com/watch?v=9cgGdkC1bXA - width: 360 height: 240
+System.Net.WebException: The remote server returned an error: (401) Unauthorized.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at System.Net.WebClient.DownloadString(String address)
+   at Umbraco.Web.Media.EmbedProviders.AbstractOEmbedProvider.GetXmlResponse(String url)
+   at Umbraco.Web.Media.EmbedProviders.OEmbedVideo.GetMarkup(String url, Int32 maxWidth, Int32 maxHeight)
+   at Umbraco.Web.PropertyEditors.RteEmbedController.GetEmbed(String url, Int32 width, Int32 height)
+2015-05-01 13:03:07,366 [6] ERROR Umbraco.Web.PropertyEditors.RteEmbedController - [Thread 253] Error embedding url https://www.youtube.com/watch?v=9cgGdkC1bXA - width: 360 height: 240
+System.Net.WebException: The remote server returned an error: (401) Unauthorized.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at System.Net.WebClient.DownloadString(String address)
+   at Umbraco.Web.Media.EmbedProviders.AbstractOEmbedProvider.GetXmlResponse(String url)
+   at Umbraco.Web.Media.EmbedProviders.OEmbedVideo.GetMarkup(String url, Int32 maxWidth, Int32 maxHeight)
+   at Umbraco.Web.PropertyEditors.RteEmbedController.GetEmbed(String url, Int32 width, Int32 height)
+2015-05-01 13:03:20,361 [6] ERROR Umbraco.Web.PropertyEditors.RteEmbedController - [Thread 251] Error embedding url https://www.youtube.com/watch?v=9cgGdkC1bXA - width: 360 height: 240
+System.Net.WebException: The remote server returned an error: (401) Unauthorized.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at System.Net.WebClient.DownloadString(String address)
+   at Umbraco.Web.Media.EmbedProviders.AbstractOEmbedProvider.GetXmlResponse(String url)
+   at Umbraco.Web.Media.EmbedProviders.OEmbedVideo.GetMarkup(String url, Int32 maxWidth, Int32 maxHeight)
+   at Umbraco.Web.PropertyEditors.RteEmbedController.GetEmbed(String url, Int32 width, Int32 height)
+2015-05-01 13:04:48,501 [6] INFO  umbraco.content - [Thread 253] Loading content from database...

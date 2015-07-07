@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_d>
+    <image>
+      <originalFileName>download.jpg</originalFileName>
+      <size>17927</size>
+      <dateLastModified>Fri, 15 May 2015 13:03:04 GMT</dateLastModified>
+      <width>277</width>
+      <height>182</height>
+      <cachedImage>
+        <fileName>DOW_5c9301492e2a98c6820eb9a33f74a6a6b78f362366e3a52ec7129eeda5f6aa3b.jpeg</fileName>
+        <dateCreated>Fri, 15 May 2015 13:03:27 GMT</dateCreated>
+        <imageFormat>jpeg</imageFormat>
+        <compression>90</compression>
+        <width>400</width>
+        <height>300</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_d>
+</imageIndex>

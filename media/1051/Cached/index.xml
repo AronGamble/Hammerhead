@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_i>
+    <image>
+      <originalFileName>images.jpg</originalFileName>
+      <size>9174</size>
+      <dateLastModified>Fri, 15 May 2015 12:08:39 GMT</dateLastModified>
+      <width>184</width>
+      <height>264</height>
+      <cachedImage>
+        <fileName>IMA_53e74e7fb401c13b9ad71e2b5fc83f6dd74d2d2b7202126928b8fb2b2ee8a155.jpeg</fileName>
+        <dateCreated>Fri, 15 May 2015 12:28:28 GMT</dateCreated>
+        <imageFormat>jpeg</imageFormat>
+        <compression>90</compression>
+        <width>400</width>
+        <height>300</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_i>
+</imageIndex>

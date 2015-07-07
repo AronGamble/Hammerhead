@@ -1,0 +1,11 @@
+﻿2015-06-16 01:47:23,561 [6] INFO  umbraco.BusinessLogic.Log - [Thread 177] Log scrubbed.  Removed all items older than 2015-04-17 01:47:23
+2015-06-16 05:47:23,572 [6] INFO  umbraco.BusinessLogic.Log - [Thread 58] Log scrubbed.  Removed all items older than 2015-04-17 05:47:23
+2015-06-16 09:47:23,568 [6] INFO  umbraco.BusinessLogic.Log - [Thread 71] Log scrubbed.  Removed all items older than 2015-04-17 09:47:23
+2015-06-16 13:47:23,579 [6] INFO  umbraco.BusinessLogic.Log - [Thread 60] Log scrubbed.  Removed all items older than 2015-04-17 13:47:23
+2015-06-16 17:00:12,092 [6] INFO  umbraco.content - [Thread 216] Loading content from disk cache...
+2015-06-16 17:00:12,217 [6] INFO  Umbraco.Core.PluginManager - [Thread 216] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2015-06-16 17:00:12,217 [6] INFO  Umbraco.Core.PluginManager - [Thread 216] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 23 (took 2ms)
+2015-06-16 17:00:12,763 [6] INFO  Umbraco.Core.PluginManager - [Thread 216] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2015-06-16 17:00:12,763 [6] INFO  Umbraco.Core.PluginManager - [Thread 216] Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 44 (took 1ms)
+2015-06-16 17:47:23,590 [6] INFO  umbraco.BusinessLogic.Log - [Thread 57] Log scrubbed.  Removed all items older than 2015-04-17 17:47:23
+2015-06-16 21:47:23,601 [6] INFO  umbraco.BusinessLogic.Log - [Thread 92] Log scrubbed.  Removed all items older than 2015-04-17 21:47:23

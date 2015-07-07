@@ -1,0 +1,110 @@
+﻿@using Examine.LuceneEngine.SearchCriteria
+
+@inherits Umbraco.Web.Macros.PartialViewMacroPage
+@{
+  string searchTerm = Request.QueryString["keywords"];
+  if ( String.IsNullOrWhiteSpace( searchTerm ) ) {
+    searchTerm = "";
+  }
+
+  var searcher = ExamineManager.Instance;
+  var searchCriteria = searcher.CreateSearchCriteria();
+
+  var query = searchCriteria.GroupedOr( new[] { "nodeName", "name", "title", "bodyText", "seo" }, searchTerm ).Compile();
+
+  var searchResults = searcher.Search( query ).Where( r => r["__IndexType"] == "content" ).ToList();
+       
+}
+
+
+<section class="blog-content blog-list">
+  <div class="container">
+    <div class="row">
+      <!-- CONTENT -->
+      <div class="col-md-10 col-md-offset-1">
+        <div class="content">
+
+
+          @if ( searchResults.Any() ) {
+
+            foreach ( var result in searchResults ) {
+
+              var node = Umbraco.TypedContent( result.Id );
+
+              var pathIds = result["__Path"].Split( ',' );
+
+              var path = Umbraco.TypedContent( pathIds ).Where( p => p != null ).Select( p => new { p.Name } ).ToList();
+            <!-- POST -->
+            <div class="post">
+              <div class="post-media">
+                <div class="image-wrap">
+                  <img src="/images/blog/list/400x330.gif" alt="">
+                </div>
+                <div class="post-cat">
+                  <a href="#">Travelx</a>
+                </div>
+              </div>
+              <div class="post-meta">
+                <div class="post-format">
+                  <a href="#"><i class="fa fa-image"></i></a>
+                </div>
+                <div class="post-date">
+                  <span class="year">2015</span>
+                  <span class="month">Mar</span>
+                  <span class="day">14</span>
+                </div>
+                <div class="post-comment">
+                  <i class="fa fa-comment"></i>
+                  <a href="#">105</a>
+                </div>
+              </div>
+              <div class="post-body">
+                <div class="post-author">
+                  <a href="#">
+                    <div class="image-thumb">
+                      <img src="images/author/50x50.gif" alt="">
+                    </div>
+                    <div class="name-author">
+                      <cite></cite>
+                    </div>
+                  </a>
+                </div>
+                <div class="post-title">
+                  <h2><a href="blog-single.html"></a></h2>
+                </div>
+                <div class="post-entry">
+                  <a href="@node.Url">@String.Join( " > ", path.Select( p => p.Name ) )</a>
+                  <h3>
+                    <a href="@node.Url">@node.Name</a>
+                  </h3>
+
+
+                  @if ( result.Fields.ContainsKey( "title" ) ) {
+                    <p class="results-title"><strong>@result["title"]</strong></p>
+                  }
+
+                  @if ( result.Fields.ContainsKey( "bodyText" ) ) {
+                    <p>@result["bodyText"].Truncate( 250 )</p>
+                  }
+                </div>
+              </div>
+            </div>
+            <!-- END / POST -->				 						
+            }
+          }
+          else {
+            <p>
+              There are no results matching your search criteria:
+ 
+        @if ( !String.IsNullOrWhiteSpace( searchTerm ) ) {
+          <text>'@searchTerm'</text>
+        }
+            </p>                                        				   
+          }
+        </div>
+      </div>
+      <!-- END / CONTENT -->
+    </div>
+  </div>
+</section>
+

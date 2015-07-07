@@ -1,0 +1,246 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = null;
+	var home = @CurrentPage.Site();
+}
+
+<!DOCTYPE html>
+<!--[if IE 7 ]> <html class="ie ie7"> <![endif]-->
+<!--[if IE 8 ]> <html class="ie ie8"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="" lang="en"> <!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- CSS LIBRARY -->
+    <link rel="stylesheet" type="text/css" href="/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/lib/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="/css/lib/font-awesome.min.css">
+
+
+    <!-- PAGE STYLE -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    
+    <title>@CurrentPage.Name | @CurrentPage._siteTitle</title>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+    <div class="tb-cell">
+        <div class="page-loading">
+            <div class="item-icon"></div>
+        </div>
+    </div>
+</div>
+<!-- END / PRELOADER -->
+
+<!-- PAGE WRAP -->
+<div id="page-wrap">
+    <!-- HEADER -->
+    <header id="header" class="header">
+        <div class="container">
+            <!-- LOGO -->
+            <div class="logo text-center">
+				<a href="/">				
+@{
+    var m = Umbraco.Media(1090);
+    <img src="@m.Url" alt="@m.UrlName" />
+}
+</a>
+            </div>
+             <!-- END / LOGO -->
+        </div>
+				
+ @{ Html.RenderPartial("MainNavigation"); }
+
+
+    </header>
+    <!-- END / HEADER -->
+<!-- Dynamic Content -->
+			
+			
+			
+			@RenderBody()
+			
+			
+			
+			
+			<!-- End Dynamic Content -->
+
+
+
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+
+                <!-- WIDGET NEWSLETTER -->
+                <div class="col-md-4">
+                    <div class="widget widget_newsletter">
+                        <h4>Newsletter</h4>
+                        <div class="desc">
+                            <p>Subscribe now if you want to recieve updates and news via email.</p>
+                        </div>
+                        <form id="subscribe-form" action="POST" data-mailchimp="true">
+                            <div class="form-item form-remove">
+                                <input type="text" id="subscribe-email" value="Enter your email">
+                            </div>
+                            <div class="form-actions form-remove">
+                                <input type="submit" id="subscribe-button" value="Send">
+                            </div>
+                            <div class="subscribe-status"></div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END / WIDGET NEWSLETTER -->
+
+                <!-- WIDGET META -->
+                <div class="col-md-3">
+                    <div class="widget widget_meta">
+                        <h4>Meta</h4>
+                        <ul>
+                            <li><a href="#">Log in</a></li>
+                            <li><a href="#">Entries RSS</a></li>
+                            <li><a href="#">Comments RSS</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END / WIDGET META -->
+
+                <!-- WIDGET TWITTER -->
+                <div class="col-md-3">
+                    <div class="widget widget_latest_tweet">
+                        <h4>Latest tweet</h4>
+                        <div class="latest-tweets" data-username="hoa_doi_2911" data-number="5" data-modpath="./twitter/index.php"> 
+                        </div>
+                    </div>
+                </div>
+                <!-- END / WIDGET TWITTER -->
+
+                <!-- WIDGET ARCHIVES -->
+                <div class="col-md-2">
+                    <div class="widget widget_archive">
+                        <h4>Archives</h4>
+                        <ul>
+                            <li><a href="#">September 2014</a></li>
+                            <li><a href="#">July 2014</a></li>
+                            <li><a href="#">June 2014</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END / WIDGET ARCHIVES -->
+            </div>
+        </div>
+        <div class="copyright text-center">
+            <p>Copyrights © 2014 All Rights Reserved by Long Nguyen</p>
+        </div>
+    </footer>
+    <!-- END / FOOTER -->
+
+    
+
+</div>
+<!-- END / PAGE WRAP -->
+
+<!-- LOAD JQUERY -->
+<script type="text/javascript" src="/scripts/lib/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/scripts/lib/jquery.owl.carousel.js"></script>
+<script type="text/javascript" src="/scripts/lib/jquery.tweet.min.js"></script>
+<script type="text/javascript" src="/scripts/lib/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="/scripts/lib/retina.min.js"></script>
+<script type="text/javascript" src="/scripts/min/scripts.min.js"></script>
+
+</body>
+</html>
+			
+			
+		
+			
+			
+			
+			
+			
+@*<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="@CurrentPage.siteDescription">
+
+    <title>@CurrentPage.Name | @CurrentPage._siteTitle</title>
+	
+	<!-- Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Merriweather:400,700,300,900" rel="stylesheet" type="text/css">
+	<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
+	
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/fanoe.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8 col-sm-12 col-md-4">
+			<a href="@home.Url">
+            	<div class="brand" style="background-image:url('@(home.SiteLogo)?height=65&width=205&bgcolor=000')"></div>
+			</a>
+          </div>
+          <div class="col-sm-12 col-md-8">
+            <nav>
+			  
+              @{ Html.RenderPartial("MainNavigation"); }
+
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div id="toggle" class="toggle">
+        <a href="#" class="cross"><span></span></a>
+      </div>
+    </header>
+	
+    @RenderBody()
+
+    <footer class="field dark">
+      <div class="container">
+        <div class="row">
+			
+		  @{ Html.RenderPartial("BottomNavigation"); }
+
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Javascripts -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+	<script src="/scripts/fanoe.js"></script>
+  </body>
+</html>*@
+			

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_H>
+    <image>
+      <imageText>Hello, world!</imageText>
+      <cachedImage>
+        <fileName>HEL_8dc4862f7b13213aaa1e2770ade498eede099138ce2c9c1bc4fc0bb58e370156.gif</fileName>
+        <dateCreated>Wed, 27 May 2015 07:44:06 GMT</dateCreated>
+        <imageFormat>gif</imageFormat>
+        <width>400</width>
+        <height>300</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+        <antiAlias>True</antiAlias>
+        <fontName>Arial</fontName>
+        <fontSize>32</fontSize>
+        <lineHeight>-1</lineHeight>
+        <fontStyle>Regular</fontStyle>
+        <fontColor>#000000</fontColor>
+        <align>left</align>
+        <valign>middle</valign>
+      </cachedImage>
+      <cachedImage>
+        <fileName>HEL_8f0b47da041d76886379cdd214518009536d65dd6c52249e8300b5edd501fe0f.gif</fileName>
+        <dateCreated>Fri, 05 Jun 2015 13:49:37 GMT</dateCreated>
+        <imageFormat>gif</imageFormat>
+        <width>0</width>
+        <height>300</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+        <antiAlias>True</antiAlias>
+        <fontName>Arial</fontName>
+        <fontSize>32</fontSize>
+        <lineHeight>-1</lineHeight>
+        <fontStyle>Regular</fontStyle>
+        <fontColor>#000000</fontColor>
+        <align>left</align>
+        <valign>middle</valign>
+      </cachedImage>
+    </image>
+  </_H>
+</imageIndex>

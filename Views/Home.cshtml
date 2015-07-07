@@ -1,0 +1,190 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+
+    <!-- BLOG MAIN CONTENT -->
+    <section class="blog-content blog-standard">
+        <div class="container">
+															
+            <div class="row">
+                <!-- CONTENT -->
+                <div class="col-md-9">
+                    <div class="content">
+                               
+						@{ var firstAudio = CurrentPage.Site().FirstChild("Audio").Children("Audioitem").Where("Visible").OrderBy("CreateDate desc").First(); }
+
+                        <!-- POST -->
+                        <div class="post">
+                            <div class="post-media">
+                               
+									@Html.Raw(firstAudio.audioFile)                                                             								
+                                <div class="post-cat">
+                                    <a href="#">@firstAudio.Summary</a>
+                                </div>
+                            </div>
+                            <div class="post-meta">
+                                <div class="post-format">
+                                    <a href="#"><i class="fa fa-youtube-play"></i></a>
+                                </div>
+                                <div class="post-date">
+                                   @FormattedDate(firstAudio.CreateDate.ToString())
+                                </div>                               
+                            </div>
+                            <div class="post-body">
+                                <div class="post-author">
+                                    <div class="image-thumb">
+                                        <img src="images/author/50x50.gif" alt="">
+                                    </div>
+                                    <div class="name-author">
+                                        <cite>@firstAudio.Summary</cite>
+                                    </div>
+                                </div>
+                                <div class="post-title">
+                                    <h2><a href="single.html">@firstAudio.name</a></h2>
+                                </div>
+                               
+                                <div class="post-link">
+                                    <a href="/audio" class="pi-btn">See more</a>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <!-- END / POST -->
+
+											
+								
+@{
+	var firstVideo = CurrentPage.Site().FirstChild("Video").Children("Videoitem").Where("Visible").OrderBy("CreateDate desc").First();
+}
+																																			
+					    <!-- POST -->
+                        <div class="post">
+                            <div class="post-media">
+                          
+									@Html.Raw(firstVideo.videoFile)
+                                    
+                       
+								
+                                <div class="post-cat">
+                                    <a href="#">@firstVideo.Summary</a>
+                                </div>
+                            </div>
+                            <div class="post-meta">
+                                <div class="post-format">
+                                    <a href="#"><i class="fa fa-youtube-play"></i></a>
+                                </div>
+                                <div class="post-date">
+                                    @FormattedDate(firstVideo.CreateDate.ToString())
+                                </div>                              
+                            </div>
+                            <div class="post-body">
+                                <div class="post-author">
+                                    <div class="image-thumb">
+                                        <img src="images/author/50x50.gif" alt="">
+                                    </div>
+                                    <div class="name-author">
+                                        <cite>@firstVideo.Summary</cite>
+                                    </div>
+                                </div>
+                                <div class="post-title">
+                                    <h2><a href="single.html">@firstVideo.name</a></h2>
+                                </div>
+                               
+                                <div class="post-link">
+                                    <a href="/audio" class="pi-btn">See more</a>
+                                </div>
+                              
+                            </div>
+                        </div>
+                        <!-- END / POST -->																										
+				
+						@{
+							var firstGuitar = CurrentPage.Site().FirstChild("Guitars").Children("Guitar").Where("Visible").OrderBy("CreateDate desc").First();
+						}
+																
+						<!-- POST -->
+                        <div class="post">
+                            <div class="post-media">
+                                  <div>
+								      <img src="/ImageGen.ashx?image=@Umbraco.Media(@firstGuitar.Image.ToString()).Url&amp;height=300" alt="">									                                    
+                                  </div>								
+                                <div class="post-cat">
+                                    <a href="#">Gear</a>
+                                </div>
+                            </div>
+                            <div class="post-meta">
+                                <div class="post-format">
+                                    <a href="#"><i class="fa fa-youtube-play"></i></a>
+                                </div>
+                                <div class="post-date">
+									@FormattedDate(firstGuitar.CreateDate.ToString())
+                                </div>                               
+                            </div>
+                            <div class="post-body">
+                                <div class="post-author">
+                                    <div class="image-thumb">
+                                        <img src="images/author/50x50.gif" alt="">
+                                    </div>
+                                    <div class="name-author">
+                                        <cite>Gear</cite>
+                                    </div>
+                                </div>
+                                <div class="post-title">
+                                    <h2><a href="single.html"> @firstGuitar.Manufacturer @firstGuitar.Model</a></h2>
+                                </div>
+                                <div class="post-entry">
+                                    @firstGuitar.Description
+                                </div>
+                                <div class="post-link">
+                                    <a href="/guitars" class="pi-btn">See more</a>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <!-- END / POST -->
+																																																							                    
+                    </div>
+                </div>
+                <!-- END / CONTENT -->
+
+                <!-- SIDEBAR -->
+                <div class="col-md-3">
+                    <div class="sidebar sidebar-right">
+
+                        <!-- WIDGET CATEGORIES -->
+                        <div class="widget widget_categories">
+                            <h4>Categories</h4>
+                            @Html.Partial("MenuSideBar")														
+                        </div>
+                        <!-- END / WIDGET CATEGORIES -->
+
+                        <!-- WIDGET FLICKR -->
+                        <div class="widget widget_flickr">
+							
+                            <h4>Images</h4>
+							
+							@Html.Partial("showimagesfromGuitarfolder")
+							
+							
+                        </div>
+                        <!-- END / WIDGET FLICKR -->
+
+                                            
+                    </div>
+                </div>
+                <!-- END / SIDEBAR -->
+            </div>
+        </div>
+    </section>
+    <!-- BLOG MAIN CONTENT -->
+							
+@helper FormattedDate(dynamic date)
+{	
+	DateTime dte = DateTime.Parse(date);
+
+	<div class="homepageDate">@dte.ToString("dd")</div>
+	<div class="homepageDate">@dte.ToString("MMM")</div>
+    <div class="homepageDate">@dte.ToString("yyyy")</div>
+}	
+							

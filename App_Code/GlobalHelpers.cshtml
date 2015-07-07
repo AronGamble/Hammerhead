@@ -1,0 +1,8 @@
+﻿@helper FormattedDate(dynamic date)
+{	
+	DateTime dte = DateTime.Parse(date);
+
+	<span class="year">@dte.ToString("dd")</span>
+	<span class="month">@dte.ToString("MMM")</span>
+  <span class="day">@dte.ToString("yyyy")</span>
+}

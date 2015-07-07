@@ -1,0 +1,20 @@
+﻿2015-05-13 00:29:40,424 [6] INFO  umbraco.BusinessLogic.Log - [Thread 175] Log scrubbed.  Removed all items older than 2015-03-14 00:29:40
+2015-05-13 04:29:40,446 [6] INFO  umbraco.BusinessLogic.Log - [Thread 70] Log scrubbed.  Removed all items older than 2015-03-14 04:29:40
+2015-05-13 08:29:40,454 [6] INFO  umbraco.BusinessLogic.Log - [Thread 91] Log scrubbed.  Removed all items older than 2015-03-14 08:29:40
+2015-05-13 12:29:40,477 [6] INFO  umbraco.BusinessLogic.Log - [Thread 56] Log scrubbed.  Removed all items older than 2015-03-14 12:29:40
+2015-05-13 12:46:10,533 [6] INFO  Umbraco.Web.Security.WebSecurity - [Thread 71] User Id: 0 logged in
+2015-05-13 12:46:10,705 [6] INFO  Umbraco.Core.PluginManager - [Thread 58] Starting resolution types of Umbraco.Web.Trees.TreeController
+2015-05-13 12:46:10,705 [6] INFO  Umbraco.Core.PluginManager - [Thread 58] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 2ms)
+2015-05-13 12:46:10,767 [6] INFO  Umbraco.Core.PluginManager - [Thread 69] Starting resolution types of umbraco.interfaces.IApplication
+2015-05-13 12:46:10,767 [6] INFO  Umbraco.Core.PluginManager - [Thread 69] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 0ms)
+2015-05-13 12:46:10,767 [6] INFO  Umbraco.Core.PluginManager - [Thread 71] Starting resolution types of umbraco.interfaces.ITree
+2015-05-13 12:46:10,767 [6] INFO  Umbraco.Core.PluginManager - [Thread 71] Completed resolution of types of umbraco.interfaces.ITree, found 35 (took 1ms)
+2015-05-13 12:46:10,783 [6] INFO  Umbraco.Core.PluginManager - [Thread 71] Starting resolution types of Umbraco.Web.Trees.TreeController
+2015-05-13 12:46:10,783 [6] INFO  Umbraco.Core.PluginManager - [Thread 71] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2015-05-13 12:46:10,783 [6] INFO  Umbraco.Core.PluginManager - [Thread 71] Starting resolution types of umbraco.interfaces.ITree
+2015-05-13 12:46:10,783 [6] INFO  Umbraco.Core.PluginManager - [Thread 71] Completed resolution of types of umbraco.interfaces.ITree, found 19 (took 0ms)
+2015-05-13 12:46:34,651 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 86] Content 'Hell For Leather 1995' with Id '1106' has been published.
+2015-05-13 12:46:34,729 [6] INFO  Umbraco.Core.PluginManager - [Thread 86] Starting resolution types of umbraco.interfaces.ICacheRefresher
+2015-05-13 12:46:34,729 [6] INFO  Umbraco.Core.PluginManager - [Thread 86] Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 20 (took 0ms)
+2015-05-13 16:29:40,473 [6] INFO  umbraco.BusinessLogic.Log - [Thread 199] Log scrubbed.  Removed all items older than 2015-03-14 16:29:40
+2015-05-13 19:27:50,142 [6] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 53] Application shutdown. Reason: ConfigurationChange

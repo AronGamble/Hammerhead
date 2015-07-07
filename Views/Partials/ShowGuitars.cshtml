@@ -1,0 +1,63 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+
+@{ var selection = CurrentPage.Guitars.Where("Visible"); }
+
+@if (selection.Any())
+{
+   
+        foreach (var item in selection)
+        {
+			
+			 			<!-- POST -->
+                        <div class="post">
+                            <div class="post-media">
+                                <div class="image-wrap">
+                                    <img src="/images/blog/list/400x330.gif" alt="">
+                                </div>
+                                <div class="post-cat">
+                                    <a href="/guitars/">Guitars</a>
+                                </div>
+                            </div>
+                            <div class="post-meta">
+                                <div class="post-format">
+                                    <a href="#"><i class="fa fa-image"></i></a>
+                                </div>
+                                <div class="post-date">
+                                     @GlobalHelpers.FormattedDate(item.CreateDate.ToString())
+                                </div>
+                                <div class="post-comment">
+                                    <i class="fa fa-comment"></i>
+                                    <a href="#">105</a>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div class="post-author">
+                                    <a href="#">
+                                    <div class="image-thumb">
+                                        <img src="images/author/50x50.gif" alt="">
+                                    </div>
+                                    <div class="name-author">
+                                        <cite>@item.Notes</cite>
+                                    </div>
+                                    </a>
+                                </div>
+                                <div class="post-title">
+                                    <h2><a href="blog-single.html">@item.Manufacturer @item.Model</a></h2>
+                                </div>
+                                <div class="post-entry">
+									<a href="@item.Url">@item.Name</a>
+                                    <p>@item.Description</p>
+                                </div>
+                            </div>
+                        </div>
+           <!-- END / POST -->																		                                   
+        }
+    
+}
+
+
+
+
+									
+									

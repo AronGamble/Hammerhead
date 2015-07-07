@@ -1,0 +1,39 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+
+
+
+ <!-- FEATURED -->
+    <section class="featured">
+        <div class="featured-slider">
+            
+
+           @Html.Partial("ShowFeaturedAudioFiles")
+
+        </div>
+    </section>
+    <!-- END / FEATURED -->
+
+    <!-- BLOG MAIN CONTENT -->
+    <section class="blog-content blog-list">
+        <div class="container">
+            <div class="row">
+                <!-- CONTENT -->
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="content">
+
+                       
+                        @Html.Partial("ShowAudioFiles")
+
+                        
+                    </div>
+                </div>
+                <!-- END / CONTENT -->
+            </div>
+        </div>
+    </section>
+    <!-- BLOG MAIN CONTENT -->
+
+						

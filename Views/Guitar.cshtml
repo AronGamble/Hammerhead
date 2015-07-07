@@ -1,0 +1,46 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+
+ <!-- BLOG HEADING -->
+    <section class="blog-heading text-center">
+        <div class="container">
+            <h1 class="text-uppercase">@Umbraco.Field("manufacturer") @Umbraco.Field("model")</h1>
+            
+        </div>
+    </section>
+    <!-- END / BLOG HEADING -->
+
+    <!-- BLOG MAIN CONTENT -->
+    <section class="blog-content blog-standard">
+        <div class="container">
+            <div class="row">
+                <!-- CONTENT -->
+                <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                    <div class="content">
+
+                        <!-- POST -->
+                        <div class="post">
+                            <div class="post-media">
+                                <div class="image-wrap">
+                                   <img src="@Umbraco.Media(CurrentPage.image).Url" />									
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div class="post-entry">
+                                    
+                                </div>                                                              
+                            </div>
+                        </div>
+                        <!-- END / POST -->
+
+
+                    </div>
+                </div>
+                <!-- END / CONTENT -->
+            </div>
+        </div>
+    </section>
+    <!-- BLOG MAIN CONTENT -->
+											

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_h>
+    <image>
+      <originalFileName>hamlogo.gif</originalFileName>
+      <size>6204</size>
+      <dateLastModified>Tue, 28 Apr 2015 21:28:26 GMT</dateLastModified>
+      <width>544</width>
+      <height>132</height>
+      <cachedImage>
+        <fileName>HAM_7ea4abd55796582cc90172b17bc920fc647b65307e770cc67f1065fa032e2d3b.gif</fileName>
+        <dateCreated>Fri, 29 May 2015 07:57:18 GMT</dateCreated>
+        <imageFormat>gif</imageFormat>
+        <width>400</width>
+        <height>300</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_h>
+</imageIndex>
