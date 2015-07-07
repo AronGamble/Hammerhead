@@ -245,8 +245,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Config\grid.editors.config.js" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\fanoe.css" />
+    <Content Include="css\fonts\fontawesome-webfont.svg" />
+    <Content Include="css\lib\bootstrap.min.css" />
+    <Content Include="css\lib\font-awesome.min.css" />
+    <Content Include="css\lib\owl.carousel.css" />
+    <Content Include="css\rte.css" />
+    <Content Include="css\style.css" />
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="scripts\fanoe.js" />
+    <Content Include="scripts\lib\jquery-1.11.1.min.js" />
+    <Content Include="scripts\lib\jquery.owl.carousel.js" />
+    <Content Include="scripts\lib\jquery.tweet.min.js" />
+    <Content Include="scripts\lib\masonry.pkgd.min.js" />
+    <Content Include="scripts\lib\retina.min.js" />
+    <Content Include="scripts\min\scripts.min.js" />
+    <Content Include="scripts\scripts.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -339,6 +355,40 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Config\404handlers.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Audio.cshtml" />
+    <Content Include="Views\Blog.cshtml" />
+    <Content Include="Views\BlogPost.cshtml" />
+    <Content Include="Views\Guitar.cshtml" />
+    <Content Include="Views\Guitars.cshtml" />
+    <Content Include="Views\Home.cshtml" />
+    <Content Include="Views\Master.cshtml" />
+    <Content Include="Views\Search.cshtml" />
+    <Content Include="Views\TextPage.cshtml" />
+    <Content Include="Views\Video.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\fonts\fontawesome-webfont.eot" />
+    <Content Include="css\fonts\fontawesome-webfont.ttf" />
+    <Content Include="css\fonts\fontawesome-webfont.woff" />
+    <Content Include="css\fonts\FontAwesome.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Partials\BottomNavigation.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Partials\HomeShowLatest.cshtml" />
+    <Content Include="Views\Partials\MainNavigation.cshtml" />
+    <Content Include="Views\Partials\MenuSideBar.cshtml" />
+    <Content Include="Views\Partials\ShowAudioFiles.cshtml" />
+    <Content Include="Views\Partials\ShowFeaturedAudioFiles.cshtml" />
+    <Content Include="Views\Partials\ShowFeaturedGuitars.cshtml" />
+    <Content Include="Views\Partials\ShowFeaturedVideoFiles.cshtml" />
+    <Content Include="Views\Partials\ShowGuitars.cshtml" />
+    <Content Include="Views\Partials\ShowHomepgeDateCreated.cshtml" />
+    <Content Include="Views\Partials\showimagesfromGuitarfolder.cshtml" />
+    <Content Include="Views\Partials\ShowVideoFiles.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
